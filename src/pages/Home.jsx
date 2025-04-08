@@ -43,9 +43,13 @@ const Home = () => {
                 <span className="text-3xl mr-2">🍃</span>
                 <h3 className="text-xl font-semibold text-amber-900 dark:text-amber-200">Vata</h3>
               </div>
-              <p className="text-gray-700 dark:text-gray-300">
-              composed of the elements of air and ether. It is characterized by qualities such as lightness, dryness, and movement. People with a dominant Vata are often energetic, creative, and quick-thinking, but they may also experience anxiety, restlessness, or digestive irregularities when out of balance. To stay balanced, Vata types benefit from warm, grounding foods, consistent routines, and enough rest.
-              </p>
+              <ul className="text-gray-700 dark:text-gray-300 list-disc pl-4">
+                <li>Composed of air and ether elements</li>
+                <li>Characterized by lightness, dryness, and movement</li>
+                <li>Often energetic, creative, and quick-thinking</li>
+                <li>May experience anxiety, restlessness, or digestive irregularities when imbalanced</li>
+                <li>Benefits from warm, grounding foods, consistent routines, and adequate rest</li>
+              </ul>
             </motion.div>
             
             <motion.div 
@@ -57,9 +61,14 @@ const Home = () => {
                 <span className="text-3xl mr-2">🔥</span>
                 <h3 className="text-xl font-semibold text-red-900 dark:text-red-200">Pitta</h3>
               </div>
-              <p className="text-gray-700 dark:text-gray-300">
-              made of fire and water, is associated with heat, intensity, and sharpness. Individuals with a dominant Pitta tend to be ambitious, intelligent, and passionate, often with strong digestion and leadership qualities. However, imbalances in Pitta can lead to irritability, inflammation, or excessive competitiveness. Cooling foods, stress-relieving practices, and time for relaxation are essential for maintaining Pitta balance.
-              </p>
+              <ul className="text-gray-700 dark:text-gray-300 list-disc pl-4">
+                <li>Made of fire and water elements</li>
+                <li>Associated with heat, intensity, and sharpness</li>
+                <li>Often ambitious, intelligent, and passionate</li>
+                <li>Strong digestion and leadership qualities</li>
+                <li>Imbalances can lead to irritability, inflammation, or excessive competitiveness</li>
+                <li>Requires cooling foods, stress-relieving practices, and relaxation</li>
+              </ul>
             </motion.div>
             
             <motion.div 
@@ -71,9 +80,14 @@ const Home = () => {
                 <span className="text-3xl mr-2">🌊</span>
                 <h3 className="text-xl font-semibold text-blue-900 dark:text-blue-200">Kapha</h3>
               </div>
-              <p className="text-gray-700 dark:text-gray-300">
-              governed by the elements of earth and water. It is known for being stable, heavy, and nurturing. Those with a Kapha constitution are typically calm, caring, and steady, but they may struggle with sluggishness, weight gain, or emotional attachment when imbalanced. Kapha types thrive on stimulating activities, light and spicy foods, and variety in their routines to maintain energy and motivation.
-              </p>
+              <ul className="text-gray-700 dark:text-gray-300 list-disc pl-4">
+                <li>Governed by earth and water elements</li>
+                <li>Known for being stable, heavy, and nurturing</li>
+                <li>Typically calm, caring, and steady</li>
+                <li>May struggle with sluggishness, weight gain, or emotional attachment when imbalanced</li>
+                <li>Thrives on stimulating activities, light and spicy foods</li>
+                <li>Needs variety in routines to maintain energy and motivation</li>
+              </ul>
             </motion.div>
           </div>
           
