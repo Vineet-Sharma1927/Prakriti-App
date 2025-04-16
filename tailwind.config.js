@@ -48,6 +48,9 @@ export default {
           '800': '#bfbfbf',
           '900': '#d9d9d9',
         }
+      },
+      animation: {
+        'spin-slow': 'spin 20s linear infinite',
       }
     },
   },

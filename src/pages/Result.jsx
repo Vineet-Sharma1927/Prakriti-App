@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import ResultCard from '../components/ResultCard';
 import { prakritiInfo } from '../data/prakritiInfo';
@@ -7,11 +7,20 @@ import { prakritiInfo } from '../data/prakritiInfo';
 const Result = () => {
   const { prakritiType } = useParams();
   const navigate = useNavigate();
+  const location = useLocation();
+  
+  // Extract dosha breakdown from location state or use default empty object
+  const doshaBreakdown = location.state?.doshaBreakdown || {};
   
   useEffect(() => {
     // Redirect to quiz if prakriti type is not valid
     if (!prakritiType || !prakritiInfo[prakritiType]) {
       navigate('/quiz');
+    }
+    
+    // Set default username if not present
+    if (!localStorage.getItem('userName')) {
+      localStorage.setItem('userName', 'there');
     }
   }, [prakritiType, navigate]);
   
@@ -38,6 +47,21 @@ const Result = () => {
             <h2 className="text-2xl font-semibold mb-4 dark:text-gray-100">
               You have a balanced {prakritiType.replace('-', '-')} constitution
             </h2>
+            
+            {/* Display dosha breakdown for dual types */}
+            {Object.keys(doshaBreakdown).length > 0 && (
+              <div className="mb-6">
+                <h3 className="text-xl font-semibold mb-2 dark:text-gray-100">Your Dosha Composition</h3>
+                <div className="flex justify-center gap-4">
+                  {Object.entries(doshaBreakdown).map(([dosha, percentage]) => (
+                    <div key={dosha} className="text-gray-700 dark:text-gray-300">
+                      <span className="font-medium">{dosha}:</span> {percentage}%
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+            
             <p className="text-gray-700 dark:text-gray-300 mb-6">
               Your results show a balanced mix of multiple doshas. This is quite common and indicates a constitution 
               that draws strengths from different elements. For detailed recommendations, consider consulting an 
@@ -67,10 +91,10 @@ const Result = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          Your Prakriti Result
+          Your Personalized Ayurvedic Profile
         </motion.h1>
         
-        <ResultCard prakritiType={prakritiType} />
+        <ResultCard prakritiType={prakritiType} doshaBreakdown={doshaBreakdown} />
       </div>
     </div>
   );
