@@ -3,225 +3,270 @@ export const questions = [
     id: 1,
     question: "What impact do your eating habits have on your body weight?",
     options: [
-      { text: "I am naturally slim - it is a challenge to put on weight", type: "vata" },
-      { text: "I maintain a moderate weight - I can easily shed or gain a few pounds", type: "pitta" },
-      { text: "I tend to be on the heavier side - weight piles on quickly and shedding is tough", type: "kapha" }
+      { text: "I am naturally slim - it is a challenge to put on weight.", type: "vata" },
+      { text: "I maintain a moderate weight - I can easily shed or gain a few pounds.", type: "pitta" },
+      { text: "I tend to be on the heavier side - weight piles on quickly and shedding is tough.", type: "kapha" }
     ]
   },
   {
     id: 2,
     question: "Your energy type:",
     options: [
-      { text: "Bursts of energy followed by periods of fatigue", type: "vata" },
-      { text: "Moderate but steady energy throughout the day", type: "pitta" },
-      { text: "Steady, enduring energy but tendency towards lethargy", type: "kapha" }
+      { text: "Bursts of energy followed by periods of fatigue.", type: "vata" },
+      { text: "Moderate but steady energy throughout the day.", type: "pitta" },
+      { text: "Steady, enduring energy but tendency towards lethargy.", type: "kapha" }
     ]
   },
   {
     id: 3,
     question: "Thirst:",
     options: [
-      { text: "The pattern of my thirst is kind of irregular, Sometimes I feel very thirsty, the others time less", type: "vata" },
-      { text: "I often feel thirsty and need to consume water frequently", type: "pitta" },
-      { text: "I seldom feel thirsty and can go without water for hours", type: "kapha" }
+      { text: "The pattern of my thirst is kind of irregular, Sometimes I feel very thirsty, the other times less.", type: "vata" },
+      { text: "I often feel thirsty and need to consume water frequently.", type: "pitta" },
+      { text: "I seldom feel thirsty and can go without water for hours.", type: "kapha" }
     ]
   },
   {
     id: 4,
     question: "Appetite and hunger tolerance:",
     options: [
-      { text: "My appetite varies, sometimes it is quite scanty. Sometimes, I miss a meal and do not seem to remember it either", type: "vata" },
-      { text: "I have an excessive appetite and love a good meal. I would really get irritated if I miss a meal", type: "pitta" },
-      { text: "I have a slow, steady appetite that does not fluctuate much. However, I do not mind missing a meal sometimes if that is deemed necessary", type: "kapha" }
+      { text: "My appetite varies, sometimes it is quite scanty. Sometimes, I miss a meal and do not seem to remember it either.", type: "vata" },
+      { text: "I have an excessive appetite and love a good meal. I would really get irritated if I miss a meal.", type: "pitta" },
+      { text: "I have a slow, steady appetite that does not fluctuate much. However, I do not mind missing a meal sometimes if that is deemed necessary.", type: "kapha" }
     ]
   },
   {
     id: 5,
     question: "Memory:",
     options: [
-      { text: "I remember recent events well but struggle with the older memories", type: "vata" },
-      { text: "My memory is sharp and quick to recall", type: "pitta" },
-      { text: "I have a good long-term memory but I may tend to forget or miss immediate plans and schedule", type: "kapha" }
+      { text: "I remember recent events well but struggle with the older memories.", type: "vata" },
+      { text: "My memory is sharp and quick to recall.", type: "pitta" },
+      { text: "I have a good long-term memory but I may tend to forget or miss immediate plans and schedule.", type: "kapha" }
     ]
   },
   {
     id: 6,
-    question: "Social Settings:",
+    question: "Sleep pattern:",
     options: [
-      { text: "I prefer solitude over large gatherings", type: "vata" },
-      { text: "I thrive in the energy of the large groups", type: "pitta" },
-      { text: "I feel most comfortable in intimate, small gatherings", type: "kapha" }
+      { text: "My sleep is light, interrupted and I tend to wake up easily.", type: "vata" },
+      { text: "My sleep is moderate and I wake up feeling refreshed.", type: "pitta" },
+      { text: "I sleep deeply and sometimes find it hard to wake up.", type: "kapha" }
     ]
   },
   {
     id: 7,
-    question: "Preferred taste:",
+    question: "Response to weather:",
     options: [
-      { text: "I am very fond of sour, salty and sweet food items", type: "vata" },
-      { text: "I derive pleasure from the cherishing food that are mainly sweet, bitter and astringent in taste", type: "pitta" },
-      { text: "I relish dishes that are bitter, pungent or astringent in taste", type: "kapha" }
+      { text: "I dislike cold weather and prefer warmth.", type: "vata" },
+      { text: "I dislike hot weather and prefer coolness.", type: "pitta" },
+      { text: "I can tolerate most weather, but dislike dampness and humidity.", type: "kapha" }
     ]
   },
   {
     id: 8,
-    question: "Digestion:",
+    question: "Skin:",
     options: [
-      { text: "I have a irregular digestion and find some food hard to digest", type: "vata" },
-      { text: "My digestion is regular and easy, but may experience heartburn or irritability when meals are missed", type: "pitta" },
-      { text: "I often feel drowsy after meals and my digestion feels heavy, slow digestion", type: "kapha" }
+      { text: "My skin is dry, rough and cool to touch.", type: "vata" },
+      { text: "My skin is soft, warm and tends to be oily or prone to rashes.", type: "pitta" },
+      { text: "My skin is thick, smooth, moist and cool.", type: "kapha" }
     ]
   },
   {
     id: 9,
-    question: "Weather Sensitivity:",
+    question: "Hair:",
     options: [
-      { text: "I cannot stand the cold - it is not for me", type: "vata" },
-      { text: "I struggle with warmth and prefer cooler temperatures", type: "pitta" },
-      { text: "I am adaptable and can handle both cold and warm weather", type: "kapha" }
+      { text: "My hair is dry, brittle and tends to split or break easily.", type: "vata" },
+      { text: "My hair is fine, soft and tends to get oily or grey early.", type: "pitta" },
+      { text: "My hair is thick, lustrous and wavy.", type: "kapha" }
     ]
   },
   {
     id: 10,
-    question: "Disease Resistance:",
+    question: "Nails:",
     options: [
-      { text: "I tend to be more susceptible to illness", type: "vata" },
-      { text: "My resistance is moderate", type: "pitta" },
-      { text: "I have a strong immune system", type: "kapha" }
+      { text: "My nails are rough, brittle and break easily.", type: "vata" },
+      { text: "My nails are soft, pinkish and tend to be flexible.", type: "pitta" },
+      { text: "My nails are thick, strong and smooth.", type: "kapha" }
     ]
   },
   {
     id: 11,
-    question: "Sleep Pattern:",
+    question: "Joints:",
     options: [
-      { text: "My sleep is often interrupted and not very useful", type: "vata" },
-      { text: "I generally have a normal sleep pattern and I can wake up easily", type: "pitta" },
-      { text: "I tend to sleep excessively and deeply", type: "kapha" }
+      { text: "My joints are prominent and tend to crack or pop.", type: "vata" },
+      { text: "My joints are moderately prominent and flexible.", type: "pitta" },
+      { text: "My joints are large, well-lubricated and stable.", type: "kapha" }
     ]
   },
   {
     id: 12,
-    question: "Activity Preferences:",
+    question: "Body frame:",
     options: [
-      { text: "I love staying physically active, it is my jam!", type: "vata" },
-      { text: "I exercise to reduce stress and stay balanced", type: "pitta" },
-      { text: "I enjoy leisurely activities like games, movies and cards", type: "kapha" }
+      { text: "I have a thin, light and small frame.", type: "vata" },
+      { text: "I have a medium, athletic frame.", type: "pitta" },
+      { text: "I have a large, broad and solid frame.", type: "kapha" }
     ]
   },
   {
     id: 13,
-    question: "Skin Health:",
+    question: "Face:",
     options: [
-      { text: "My skin tends to dry, rough and lack moisture", type: "vata" },
-      { text: "I have a soft, warm skin that is often balanced", type: "pitta" },
-      { text: "I am blessed with soft, glossy, oily skin that can feel cool to touch", type: "kapha" }
+      { text: "My face is oval, small and thin.", type: "vata" },
+      { text: "My face is heart-shaped, pointed chin and medium size.", type: "pitta" },
+      { text: "My face is round, full and large.", type: "kapha" }
     ]
   },
   {
     id: 14,
-    question: "Body Temperature:",
+    question: "Eyes:",
     options: [
-      { text: "It tends to run slightly warmer than normal", type: "vata" },
-      { text: "My body temperature is generally within the normal range", type: "pitta" },
-      { text: "It runs slightly cooler than the average body temperature. My hands and feet are often cold", type: "kapha" }
+      { text: "My eyes are small, dry and active.", type: "vata" },
+      { text: "My eyes are medium, sharp and have a penetrating gaze.", type: "pitta" },
+      { text: "My eyes are large, calm and attractive.", type: "kapha" }
     ]
   },
   {
     id: 15,
-    question: "Nails:",
+    question: "Lips:",
     options: [
-      { text: "My nails are rough, dry and do not grow much", type: "vata" },
-      { text: "They have a slightly glossy, reddish/pinkish appearance", type: "pitta" },
-      { text: "I am blessed with long whitish, strong and thick nails", type: "kapha" }
+      { text: "My lips are dry, thin and rough.", type: "vata" },
+      { text: "My lips are soft, reddish and medium.", type: "pitta" },
+      { text: "My lips are thick, smooth and pale.", type: "kapha" }
     ]
   },
   {
     id: 16,
-    question: "Lips:",
+    question: "Teeth:",
     options: [
-      { text: "My lips are dry, thin and tend to darken", type: "vata" },
-      { text: "I have red, soft and naturally moist lips", type: "pitta" },
-      { text: "My lips are thick and glossy in appearance", type: "kapha" }
+      { text: "My teeth are irregular, protruding or spaced out.", type: "vata" },
+      { text: "My teeth are medium-sized, yellowish and tend to be sensitive.", type: "pitta" },
+      { text: "My teeth are large, white and strong.", type: "kapha" }
     ]
   },
   {
     id: 17,
-    question: "Hands:",
+    question: "Voice:",
     options: [
-      { text: "I have relatively short hands", type: "vata" },
-      { text: "My hands are of medium length", type: "pitta" },
-      { text: "I am blessed with long, elegant hands", type: "kapha" }
+      { text: "My voice is low, hoarse and tends to be rough.", type: "vata" },
+      { text: "My voice is sharp, clear and tends to be loud.", type: "pitta" },
+      { text: "My voice is deep, steady and melodious.", type: "kapha" }
     ]
   },
   {
     id: 18,
-    question: "Body Hair:",
+    question: "Sweating:",
     options: [
-      { text: "I have scanty body hair", type: "vata" },
-      { text: "There are few hairs and they tend to be brownish", type: "pitta" },
-      { text: "I am am quite hairy with dark, thick and abundant hair", type: "kapha" }
+      { text: "I sweat less and my perspiration is not much noticeable.", type: "vata" },
+      { text: "I sweat profusely and my perspiration has a strong odour.", type: "pitta" },
+      { text: "I sweat moderately and my perspiration is not much noticeable.", type: "kapha" }
     ]
   },
   {
     id: 19,
-    question: "Scalp Hair:",
+    question: "Bowel movement:",
     options: [
-      { text: "My hair tend to be stiff, curly and on the dry side. It can tend to be brittle", type: "vata" },
-      { text: "I have scanty hair with a tendency for early baldness and/or premature greying. My hair are mostly straight", type: "pitta" },
-      { text: "I am blessed with thick, shiny/glossy, long and sometimes wavy lock", type: "kapha" }
+      { text: "My bowel movement is irregular, dry and hard.", type: "vata" },
+      { text: "My bowel movement is regular, soft and sometimes loose.", type: "pitta" },
+      { text: "My bowel movement is regular, well-formed and sometimes sluggish.", type: "kapha" }
     ]
   },
   {
     id: 20,
-    question: "Pulse:",
+    question: "Urine:",
     options: [
-      { text: "My pulse is irregular and quick", type: "vata" },
-      { text: "It is fast-paced, but the volume is less pronounced", type: "pitta" },
-      { text: "I have a slow, full-volume pulse", type: "kapha" }
+      { text: "My urine is scanty and pale.", type: "vata" },
+      { text: "My urine is yellowish and has a strong odour.", type: "pitta" },
+      { text: "My urine is copious and clear.", type: "kapha" }
     ]
   },
   {
     id: 21,
-    question: "Perspiration:",
+    question: "Emotions:",
     options: [
-      { text: "I do not sweat much", type: "vata" },
-      { text: "I sweat easily and sometimes have a strong body odour", type: "pitta" },
-      { text: "My perspiration levels are normal and balanced", type: "kapha" }
+      { text: "I am anxious, fearful and tend to worry.", type: "vata" },
+      { text: "I am irritable, aggressive and tend to get angry easily.", type: "pitta" },
+      { text: "I am calm, stable and tend to be content.", type: "kapha" }
     ]
   },
   {
     id: 22,
-    question: "Sexual Desires:",
+    question: "Reaction to stress:",
     options: [
-      { text: "My sexual desire is on the lower side", type: "vata" },
-      { text: "I have a moderate level of sexual desire", type: "pitta" },
-      { text: "I have abundant sexual desire and energy", type: "kapha" }
+      { text: "I get nervous and restless under stress.", type: "vata" },
+      { text: "I get impatient and frustrated under stress.", type: "pitta" },
+      { text: "I withdraw and become indifferent under stress.", type: "kapha" }
     ]
   },
   {
     id: 23,
-    question: "Walking Style (when time is not a constraint and you are alone in your journey):",
+    question: "Work style:",
     options: [
-      { text: "I walk very quickly with swift, purposeful movements", type: "vata" },
-      { text: "My walking pace is normal and steady", type: "pitta" },
-      { text: "I have a slow and deliberate gait when walking", type: "kapha" }
+      { text: "I am quick, creative and tend to multitask.", type: "vata" },
+      { text: "I am focused, organized and goal-oriented.", type: "pitta" },
+      { text: "I am steady, methodical and prefer routine work.", type: "kapha" }
     ]
   },
   {
     id: 24,
-    question: "Associated body movements:",
+    question: "Decision making:",
     options: [
-      { text: "I tend to move my legs and shoulders a lot when working", type: "vata" },
-      { text: "My body movements are normal and aligned with my tasks", type: "pitta" },
-      { text: "I do not have many associated body movements when working", type: "kapha" }
+      { text: "I am indecisive and tend to change my mind often.", type: "vata" },
+      { text: "I am decisive and make quick decisions.", type: "pitta" },
+      { text: "I take time to decide but stick to my decisions.", type: "kapha" }
     ]
   },
   {
     id: 25,
-    question: "Finance Handling:",
+    question: "Social interaction:",
     options: [
-      { text: "Tendency to spend more impulsively", type: "vata" },
-      { text: "Tendency to spend mainly on meaningful things and save wisely", type: "pitta" },
-      { text: "Tendency to save more and more cautiously", type: "kapha" }
+      { text: "I am talkative, friendly and enjoy meeting new people.", type: "vata" },
+      { text: "I am selective, prefer a small group of friends.", type: "pitta" },
+      { text: "I am reserved, prefer solitude or company of close ones.", type: "kapha" }
+    ]
+  },
+  {
+    id: 26,
+    question: "Hobbies:",
+    options: [
+      { text: "I like to travel, explore and try new things.", type: "vata" },
+      { text: "I like competitive sports, debates and intellectual pursuits.", type: "pitta" },
+      { text: "I like music, art, gardening and relaxing activities.", type: "kapha" }
+    ]
+  },
+  {
+    id: 27,
+    question: "Learning style:",
+    options: [
+      { text: "I learn quickly but forget easily.", type: "vata" },
+      { text: "I grasp concepts well and remember them for a long time.", type: "pitta" },
+      { text: "I learn slowly but retain information for a long time.", type: "kapha" }
+    ]
+  },
+  {
+    id: 28,
+    question: "Physical activity:",
+    options: [
+      { text: "I am energetic and enjoy movement.", type: "vata" },
+      { text: "I am moderately active and enjoy challenges.", type: "pitta" },
+      { text: "I prefer minimal activity and enjoy relaxation.", type: "kapha" }
+    ]
+  },
+  {
+    id: 29,
+    question: "Adaptability:",
+    options: [
+      { text: "I adapt quickly to changes.", type: "vata" },
+      { text: "I adapt moderately to changes.", type: "pitta" },
+      { text: "I resist change and prefer stability.", type: "kapha" }
+    ]
+  },
+  {
+    id: 30,
+    question: "Overall, which of the following best describes you?",
+    options: [
+      { text: "Creative, enthusiastic, restless, irregular habits.", type: "vata" },
+      { text: "Intelligent, ambitious, organized, perfectionist.", type: "pitta" },
+      { text: "Calm, steady, loyal, routine-oriented.", type: "kapha" }
     ]
   }
 ]; 
