@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { prakritiInfo } from '../data/prakritiInfo';
 import { useState } from 'react';
 
-const ResultCard = ({ prakritiType, doshaBreakdown = {} }) => {
+const ResultCard = ({ prakritiType, doshaBreakdown = {}, onOpenChatbot }) => {
   const info = prakritiInfo[prakritiType];
   const [activeTab, setActiveTab] = useState('diet');
   
@@ -443,6 +443,18 @@ const ResultCard = ({ prakritiType, doshaBreakdown = {} }) => {
       
       {/* Call-to-Action Buttons */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-8">
+        <motion.button
+          onClick={onOpenChatbot}
+          className="w-full bg-blue-600 text-white hover:bg-blue-700 px-4 py-3 rounded-lg shadow font-medium transition-colors duration-200 text-sm flex items-center justify-center"
+          whileHover={{ scale: 1.03 }}
+          whileTap={{ scale: 0.97 }}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
+            <path fillRule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clipRule="evenodd" />
+          </svg>
+          Chat Assistant
+        </motion.button>
+        
         <Link to="/quiz">
           <motion.button 
             className="w-full bg-white dark:bg-dark-300 text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-dark-400 px-4 py-3 rounded-lg shadow font-medium transition-colors duration-200 text-sm"
@@ -460,15 +472,6 @@ const ResultCard = ({ prakritiType, doshaBreakdown = {} }) => {
           onClick={() => alert("This feature will be available soon!")}
         >
           Download Report
-        </motion.button>
-        
-        <motion.button 
-          className="w-full bg-blue-600 text-white hover:bg-blue-700 px-4 py-3 rounded-lg shadow font-medium transition-colors duration-200 text-sm"
-          whileHover={{ scale: 1.03 }}
-          whileTap={{ scale: 0.97 }}
-          onClick={() => alert("This feature will be available soon!")}
-        >
-          Start 7-Day Plan
         </motion.button>
         
         <motion.button 

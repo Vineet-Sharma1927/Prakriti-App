@@ -1,0 +1,130 @@
+.chat-container {
+  position: fixed;
+  bottom: 5rem;
+  right: 2rem;
+  width: 360px;
+  max-width: calc(100vw - 2rem);
+  height: 500px;
+  max-height: calc(100vh - 8rem);
+  background-color: #333;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 50;
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background-color: #22c55e; /* green-600 */
+  color: white;
+}
+
+.chat-box {
+  flex-grow: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  background-color: rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.message {
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  max-width: 80%;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.message.bot {
+  align-self: flex-start;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #e5e5e5;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.message.user {
+  align-self: flex-end;
+  background-color: #22c55e; /* green-600 */
+  color: white;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.input-container {
+  display: flex;
+  padding: 0.75rem;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Adjust for dark mode */
+:global(.dark) .chat-container {
+  background-color: #262626; /* dark-100 */
+}
+
+:global(.dark) .message.bot {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Markdown styling */
+.message a {
+  color: #38bdf8;
+  text-decoration: underline;
+}
+
+.message code {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.25rem;
+  font-family: monospace;
+}
+
+.message pre {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  overflow-x: auto;
+}
+
+.message ul, .message ol {
+  margin-left: 1.5rem;
+}
+
+.message p {
+  margin-bottom: 0.5rem;
+}
+
+.message p:last-child {
+  margin-bottom: 0;
+}
+
+/* Animation for the typing indicator */
+.message.bot:last-child {
+  position: relative;
+}
+
+.message.bot:last-child::after {
+  content: '';
+  position: absolute;
+  bottom: 0.75rem;
+  left: 1.5rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #e5e5e5;
+  border-radius: 50%;
+  animation: typing 1s infinite ease-in-out;
+}
+
+@keyframes typing {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 1; }
+} 
