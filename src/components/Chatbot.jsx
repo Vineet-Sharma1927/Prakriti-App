@@ -21,6 +21,7 @@ export default function Chatbot({ prakriti, onClose }) {
     const updatedMessages = [...messages, userMsg];
     setMessages(updatedMessages);
     setLoading(true);
+    console.log(userInput)
 
     try {
       const fullPrompt = `User's prakriti is ${prakriti}. ${userInput}`;
@@ -28,8 +29,8 @@ export default function Chatbot({ prakriti, onClose }) {
       const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
         method: "POST",
         headers: {
-          Authorization: "Bearer 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",
-          "HTTP-Referer": "https://www.sitename.com",
+          Authorization: "Bearer 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",
+          "HTTP-Referer": "<YOUR_SITE_URL>",
           "X-Title": "SiteName",
           "Content-Type": "application/json",
         },
@@ -40,8 +41,11 @@ export default function Chatbot({ prakriti, onClose }) {
       });
 
       const data = await response.json();
+      console.log(data)
       const markdown = data.choices?.[0]?.message?.content || "No response received.";
       const botMsg = { sender: "bot", text: markdown };
+      console.log(markdown)
+      console.log(botMsg)
 
       setMessages([...updatedMessages, botMsg]);
     } catch (err) {
